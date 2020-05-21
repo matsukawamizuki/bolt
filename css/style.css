@@ -58,23 +58,23 @@
 .content {
   background-color: #74cfae;
   width: 100%;
-  transition: all .3s;
 }
 
 
 .content_inner {
   display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
+  align-items: center;
 }
 
 .content_text {
   text-align: center;
-  width: 750px;
 }
 
 .iphone {
   font-size: 0;
+  text-align: center;
+  width: 350px;
+  padding-top: 50px;
 }
 
 .content_text_heading {
@@ -88,6 +88,7 @@
   color: #fff;
   font-size: 20px;
   word-break: keep-all;
+  width: 750px;
 }
 
 .article {
@@ -108,24 +109,30 @@
 }
 
 .article_list {
-  display: inline-block;
   font-size: 0;
 }
 
 
-.article_list_img img {
+.article_list_img {
+  display: inline-block;
   margin: 0 100px 80px 0;
+  opacity: .7;
+  transition: all .3s;
 }
 
-.article_list img:nth-child(3n) {
+.article_list_img:hover {
+  opacity: 1.0;
+}
+
+.article_list .article_list_img:nth-child(3n) {
   margin-right: 0;
 }
 
-.article_list img:nth-child(n+4) {
+.article_list .article_list_img:nth-child(n+4) {
   margin-bottom: 0;
 }
 
-.article_list img:last-child {
+.article_list .article_list_img:last-child {
   margin: 0;
 }
 
@@ -149,6 +156,11 @@
   margin-left: 90px;
   padding: 14px 20px;
   text-decoration: none;
+  transition: all .3s;
+}
+
+.article_text_btn:hover {
+  color: #333;
 }
 
 .skills {
@@ -196,8 +208,19 @@
 }
 
 .info_inner_logo {
-  color: #74cfae;
+  background-color: #f2f2f2;
+  display: inline-block;
+  transition: all .3s;
   width: 185px;
+  padding: 35px 0 35px 0;
+}
+
+.info_inner_logo:hover {
+  background-color: #fff;
+}
+
+.info_inner_logo_img {
+  color: #74cfae;
 }
 
 .footer {
@@ -211,6 +234,5 @@
 
 .footer_inner_text {
   color: #fff;
-
 }
 
