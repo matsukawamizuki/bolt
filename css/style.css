@@ -20,10 +20,7 @@
   margin: 0 auto;
 }
 
-.header-inner,
-.content_inner,
-.article_text,
-.skills_chart {
+.display-flex {
   display: flex;
 }
 
@@ -85,12 +82,7 @@
   padding: 250px 0;
 }
 
-.title_inner,
-.content_text,
-.iphone,
-.article,
-.skills,
-.info {
+.text-center {
   text-align: center;
 }
 
@@ -126,7 +118,7 @@
 }
 
 .content_text_heading {
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .content_text_lead {
@@ -141,11 +133,11 @@
 
 .article_heading {
   color: #333;
-  padding-bottom: 40px;
 }
 
 .article_list {
   font-size: 0;
+  padding: 40px 0 90px 0;
 }
 
 .article_list_img {
@@ -170,7 +162,6 @@
 .article_text {
   justify-content: center;
   align-items: flex-start;
-  padding: 90px 0 70px 0;
 }
 
 .article_text_p {
@@ -227,7 +218,7 @@
   display: inline-block;
   transition: all .3s;
   width: 185px;
-  padding: 35px 0 35px 0;
+  padding: 35px 0;
 }
 
 .info_inner_logo:hover {
